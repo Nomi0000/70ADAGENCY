@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!--flowbite-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <!-- Add this in the head of your HTML file -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-[Poppins]">
+    <section
+      class="bg-[url('./images/nordwood-themes-kRNZiGKtz48-unsplash.jpg')] w-full h-screen bg-cover bg-no-repeat"
+    >
+      <nav class="bg-transparent dark:bg-gray-900 md:mx-24">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a
+            href=""
+            class="flex items-center md:ml-32 space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="images/70 LOGO png.png"
+              class="h-20 max-sm:bg-white max-sm:rounded-full"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            ></span>
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div
+            class="hidden md:bg-transparent w-full md:block md:w-auto"
+            id="navbar-default"
+          >
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--hero section-->
+
+      <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-96 overflow-hidden rounded-lg md:h-96">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="relative flex flex-col space-y-6">
+              <h1
+                class="text-white text-md font-poppin md:mt-24 font-bold md:ml-72 max-sm:text-xs"
+              >
+                Welcome to a world of limitless possibilities
+              </h1>
+              <h1
+                class="text-red-600 md:text-5xl md:ml-44 font-bold max-sm:text-center max-sm:text-2xl"
+              >
+                Digital Marketing Taglines
+              </h1>
+              <p class="text-black md:ml-80">
+                Your Success, Our Digital Expertise
+              </p>
+              <div class="flex space-x-3 justify-start md:ml-64">
+                <div
+                  class="flex bg-[#F6A440] hover:bg-[#B9104D] px-8 space-x-3 max-sm:px-4 py-3 rounded-full max-sm:px-2 max-sm:py-1 max-sm:text-center max-sm:space-x-4"
+                >
+                  <a class="text-white max-sm:text-xs" href="">Contact Us</a>
+                  <i class="fa-solid mt-1 fa-arrow-right text-white"></i>
+                </div>
+                <div
+                  class="flex bg-transparent border border-gray-400 hover:bg-[#B9104D] px-8 max-sm:px-4 space-x-3 py-3 rounded-full"
+                >
+                  <a class="text-white max-sm:text-xs" href="">Read More</a>
+                  <i class="fa-solid mt-1 fa-arrow-right text-white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="relative flex flex-col space-y-6">
+              <h1 class="text-white text-md font-bold md:mt-24 md:ml-72">
+                Welcome to a world of limitless possibilities
+              </h1>
+              <h1 class="text-red-600 md:text-5xl md:ml-44 font-bold">
+                Photography Taglines
+              </h1>
+              <p class="text-black md:ml-80">Visual Poetry in Every Frame</p>
+              <div class="flex space-x-3 justify-start ml-64">
+                <div
+                  class="flex bg-[#F6A440] hover:bg-[#B9104D] px-8 max-sm:px-4 max-sm:py-2 space-x-3 py-3 rounded-full"
+                >
+                  <a class="text-white max-sm:text-xs" href="">Contact Us</a>
+                  <i class="fa-solid mt-1 fa-arrow-right text-white"></i>
+                </div>
+                <div
+                  class="flex bg-transparent border border-gray-400 max-sm:px-4 max-sm:py-2 hover:bg-[#B9104D] px-8 space-x-3 py-3 rounded-full"
+                >
+                  <a class="text-white max-sm:text-xs" href="">Read More</a>
+                  <i class="fa-solid mt-1 fa-arrow-right text-white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="relative flex flex-col space-y-6">
+              <h1 class="text-white text-md font-bold md:mt-24 md:ml-72">
+                Welcome to a world of limitless possibilities
+              </h1>
+              <h1 class="text-red-600 md:text-5xl md:ml-44 font-bold">
+                Videography Taglines
+              </h1>
+              <p class="text-black md:ml-80">
+                Turning Ideas into Cinematic Reality.
+              </p>
+              <div class="flex space-x-3 justify-start ml-64">
+                <div
+                  class="flex bg-[#F6A440] hover:bg-[#B9104D] px-8 max-sm:px-4 max-sm:py-2 space-x-3 py-3 rounded-full"
+                >
+                  <a class="text-white max-sm:text-xs" href="">Contact Us</a>
+                  <i class="fa-solid mt-1 fa-arrow-right text-white"></i>
+                </div>
+                <div
+                  class="flex bg-transparent border border-gray-400 max-sm:px-4 max-sm:py-2 hover:bg-[#B9104D] px-8 space-x-3 py-3 rounded-full"
+                >
+                  <a class="text-white max-sm:text-xs" href="">Read More</a>
+                  <i class="fa-solid mt-1 fa-arrow-right text-white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="relative flex flex-col space-y-6">
+              <h1 class="text-white text-md font-bold md:mt-20 md:ml-72">
+                Welcome to a world of limitless possibilities
+              </h1>
+              <h1 class="text-red-600 md:text-5xl md:ml-64 font-bold">
+                About for Header
+              </h1>
+              <p class="text-black md:ml-48">
+                We Provide a Full Suite of Digital Marketing Services Including
+                Web Design, <br />
+                Social Media Management, TVC, Advertisement, Event Converge and
+                more.
+              </p>
+              <div class="flex space-x-3 justify-start ml-64">
+                <div
+                  class="flex bg-[#F6A440] hover:bg-[#B9104D] max-sm:px-4 max-sm:py-2 px-8 space-x-2 py-3 rounded-full"
+                >
+                  <a class="text-white max-sm:text-xs" href="">Contact Us</a>
+                  <i class="fa-solid mt-1 fa-arrow-right text-white"></i>
+                </div>
+                <div
+                  class="flex bg-transparent border border-gray-400 max-sm:px-4 max-sm:py-2 hover:bg-[#B9104D] px-8 space-x-2 py-3 rounded-full"
+                >
+                  <a class="text-white max-sm:text-xs" href="">Read More</a>
+                  <i class="fa-solid mt-1 fa-arrow-right text-white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+        </div>
+        <!-- Slider indicators -->
+        <div
+          class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+        >
+          <button
+            type="button"
+            class="md:w-3 md:h-3 xs:w-1 xs:h-1 rounded-full"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="md:w-3 md:h-3 xs:w-1 xs:h-1 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="md:w-3 md:h-3 xs:w-1 xs:h-1 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            class="md:w-3 md:h-3 xs:w-1 xs:h-1 rounded-full"
+            aria-current="false"
+            aria-label="Slide 4"
+            data-carousel-slide-to="3"
+          ></button>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center md:w-10 md:h-10 max-sm:w-7 max-sm:h-7 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 1 1 5l4 4"
+              />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 max-sm:w-7 max-sm:h-7 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <!--end hero section-->
+
+    <!--about us section-->
+
+    <section class="text-gray-600 w-full body-font bg-red-600">
+      <div class="absolute flex justify-between">
+        <div>
+          <img class="mt-48 h-[70vh] opacity-60" src="/images/1A.png" alt="" />
+        </div>
+        <div>
+          <img
+            class="mt-28 h-[70vh]"
+            src="/images/about 1 png (1).png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        class="relative container mx-auto flex md:px-20 md:py-24 max-sm:mt-10 md:flex-row flex-col items-center"
+      >
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 mb-10 md:mb-0">
+          <img
+            class="md:h-[80vh] max-sm:ml-2 max-sm:rounded-xl max-sm:mt-10 max-sm:w-[90vw]"
+            alt="hero"
+            src="images/Anser Nadeem ---- CEO 70AdAgency.jpg"
+          />
+          <img
+            class="relative h-[15vh] block bg-white rounded-full md:ml-64 md:-mt-10 max-sm:ml-56 max-sm:-mt-10"
+            src="/images/70 LOGO png.png"
+            alt=""
+          />
+          <h1 class="mt-2 max-sm:ml-16 md:ml-16 text-white">
+            CEO-Anser Nadeem
+          </h1>
+        </div>
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
+        >
+          <h1
+            class="title-font max-sm:text-xl text-3xl mb-4 font-medium text-white"
+          >
+            CEO Message
+            <br class="hidden lg:inline-block" />
+          </h1>
+          <p class="mb-8 xs:mb-1 leading-relaxed text-white">
+            By choosing 70 AdAgency !, you’re getting more than an advertising
+            agency; you’re getting a relationship-builder 70AdAgency is a
+            company that provides various services related to creating,
+            planning, and executing advertising and marketing campaigns for
+            businesses, products, or services. These agency work with clients to
+            help them promote their brand, products, or services to a target
+            audience, with the ultimate goal of increasing sales, brand
+            awareness, and market share
+          </p>
+          <div class="block justify-center">
+            <h1 class="text-white">Anser Nadeem</h1>
+            <h1 class="text-white mb-6">CEO 70adagency</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--end about us Section-->
+
+    <!-- Our Services Section -->
+
+    <section>
+      <div class="flex flex-col my-16 justify-center">
+        <div class="mx-auto">
+          <h1 class="md:text-5xl text-3xl">Our Best Services</h1>
+        </div>
+        <div class="mx-auto p-2">
+          <h4>
+            You're getting more from an advertising agency because of we deliver
+            <br class="max-sm:hidden" />
+            to our customers. The high quality, attentive customer service you
+            expect from us.
+          </h4>
+        </div>
+        <div class="mx-auto"><hr class="h-1 rounded w-20 bg-red-500" /></div>
+      </div>
+      <div class="grid md:grid-cols-2 md:mx-24 mx-5 grid-cols-1">
+        <div
+          class="border-2 md:w-[30vw] w-[88vw] md:h-[71vh] h-[85vh] bg-gray-400"
+        >
+          <div class="flex flex-col">
+            <div class="px-10 max-sm:py-5 py-10">
+              <img
+                class="h-[15vh] text-orange-500"
+                src="/images/s1.png"
+                alt=""
+              />
+            </div>
+            <h1 class="md:pl-10 max-sm:pl-6 text-xl text-white font-bold">Cinematography</h1>
+            <div class="md:pl-10 max-sm:pl-5">
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>TVC,DVC
+              </h1>
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>Voice Over
+              </h1>
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>Promo Teasers
+              </h1>
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>Podcast
+              </h1>
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>Promotional
+                Videography
+              </h1>
+              <button class="text-white bg-black md:mb-10 rounded-xl ml-2 mt-5 p-4">
+                View More
+              </button>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <div
+          class="border-2 md:w-[30vw] w-[88vw] md:ml-36 md:h-[71vh] h-[85vh] bg-gray-400"
+        >
+          <div class="flex flex-col">
+            <div class="px-10 max-sm:py-5 py-10">
+              <img
+                class="h-[15vh] text-orange-500"
+                src="/images/s2.png"
+                alt=""
+              />
+            </div>
+            <h1 class="md:pl-10 max-sm:pl-6 text-xl text-white font-bold">Digital Marketing</h1>
+            <div class="pl-10 max-sm:pl-5">
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>Website Design
+              </h1>
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>Social Media
+                Branding
+              </h1>
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>Website SEO
+              </h1>
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>Website Conten
+              </h1>
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>Email Marketing
+              </h1>
+              <button class="text-white rounded-xl bg-black ml-2 mt-5 p-4">
+                View More
+              </button>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <div
+          class="border-2 md:w-[30vw] w-[88vw] md:my-16 md:h-[71vh] h-[85vh] bg-gray-400"
+        >
+          <div class="flex flex-col">
+            <div class="px-10 max-sm:py-5 py-10">
+              <img
+                class="h-[15vh] text-orange-500"
+                src="/images/s3.png"
+                alt=""
+              />
+            </div>
+            <h1 class="md:pl-10 max-sm:pl-6 text-xl text-white font-bold">Grphics & Animation</h1>
+            <div class="pl-10 max-sm:pl-5">
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>
+                Logo Brand Identity
+              </h1>
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>Stationary Design
+              </h1>
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>Social Media Post Banner
+              </h1>
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>Billboards
+              </h1>
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>Gift Hampers Design
+              </h1>
+              <button class="text-white rounded-xl bg-black ml-2 mt-5 p-4">
+                View More
+              </button>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <div
+          class="border-2 md:w-[30vw] w-[88vw] md:my-16 md:ml-36 max-sm:mb-16 md:h-[71vh] h-[85vh] bg-gray-400"
+        >
+          <div class="flex flex-col">
+            <div class="px-10 max-sm:py-5 py-10">
+              <img
+                class="h-[15vh] text-orange-500"
+                src="/images/s4.png"
+                alt=""
+              />
+            </div>
+            <h1 class="md:pl-10 max-sm:pl-6 text-xl text-white font-bold">Photography</h1>
+            <div class="pl-10 max-sm:pl-5 ">
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>Aerial Photography
+              </h1>
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>Concert Photography
+              </h1>
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>Real Estate Photography
+              </h1>
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>Product Photography
+              </h1>
+              <h1 class="text-white">
+                <span class="text-red-500 px-2 text-xl">-</span>Product Photograpy
+              </h1>
+              <button class="text-white mb-16 rounded-xl bg-black ml-2 mt-5 p-4">
+                View More
+              </button>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Our Services Section -->
+
+    <!-- Client Logos Section -->
+
+    <section
+      class="bg-black bg-opacity-80 w-full max-sm:h-[125vh] md:h-[150vh]"
+    >
+      <div>
+        <div class="">
+          <h1
+            class="md:text-5xl text-2xl font-medium py-10 text-center text-white font-serif"
+          >
+            OUR SATISFIED CLIENT
+          </h1>
+        </div>
+        <div
+          class="grid grid-cols-2 max-sm:mx-16 md:mx-16 mb-16 md:grid-cols-4 py-3 max-sm:gap-x-24 md:gap-x-4"
+        >
+          <div class="hover:bg-red-600 w-[15vw] md:h-[36vh]">
+            <img src="/images/01 GLR (1)_11zon.png" alt="" />
+          </div>
+          <div class="hover:bg-red-600 w-[15vw] md:h-[36vh]">
+            <img src="/images/02 GLHS_11zon.png" alt="" />
+          </div>
+          <div class="hover:bg-red-600 max-sm:mt-10 w-[15vw] md:h-[36vh]">
+            <img src="/images/03 QUWALI LAUNGE_11zon.png" alt="" />
+          </div>
+          <div class="hover:bg-red-600 max-sm:mt-10 w-[15vw] md:h-[36vh]">
+            <img src="/images/04 KN FASHION_11zon.png" alt="" />
+          </div>
+          <div class="hover:bg-red-600 mt-10 w-[15vw] md:h-[36vh]">
+            <img src="/images/05 CYAN_11zon.png" alt="" />
+          </div>
+          <div class="hover:bg-red-600 mt-10 w-[15vw] md:h-[36vh]">
+            <img src="/images/06 UMT_11zon.png" alt="" />
+          </div>
+          <div class="hover:bg-red-600 mt-10 w-[15vw] md:h-[36vh]">
+            <img src="/images/07 UNIQUE_11zon.png" alt="" />
+          </div>
+          <div class="hover:bg-red-600 mt-10 w-[15vw] md:h-[36vh]">
+            <img src="/images/08 BALOOCH FOOD_11zon.png" alt="" />
+          </div>
+          <div class="hover:bg-red-600 mt-10 w-[15vw] md:h-[36vh]">
+            <img src="/images/10 ETIMAD CITY_11zon.png" alt="" />
+          </div>
+          <div class="hover:bg-red-600 mt-10 w-[15vw] md:h-[36vh]">
+            <img src="/images/11 MUSA GARDEN_11zon.png" alt="" />
+          </div>
+          <div class="hover:bg-red-600 mt-10 w-[15vw] md:h-[36vh]">
+            <img src="/images/12 GLO_11zon.png" alt="" />
+          </div>
+          <div class="hover:bg-red-600 mt-10 w-[15vw] md:h-[36vh]">
+            <img src="/images/12 JS_11zon.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Client Logos Section -->
+
+    <!-- Our Work Section -->
+
+    <section>
+      <div class="flex flex-col mt-16 justify-center">
+        <div class="mx-auto">
+          <h1 class="md:text-5xl text-3xl">View Our Work</h1>
+        </div>
+        <div class="mx-auto p-2"><h4>We Create Awesomeness</h4></div>
+        <div class="mx-auto"><hr class="h-1 rounded w-10 bg-red-500" /></div>
+      </div>
+      <div
+        class="grid md:mx-24 mx-3 gap-y-10 gap-x-16 my-10 mb-16 md:grid-cols-3 grid-cols-1"
+      >
+        <div class="">
+          <iframe
+            class="h-[40vh]"
+            src="https://www.youtube.com/embed/ZTjaAIyZn_Q"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="">
+          <iframe
+            class="h-[40vh]"
+            src="https://www.youtube.com/embed/AeEEZ9S4-uY"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="">
+          <iframe
+            class="h-[40vh]"
+            src="https://www.youtube.com/embed/WNlSwRDt8Fw"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="">
+          <iframe
+            class="h-[40vh]"
+            src="https://www.youtube.com/embed/ZK3nbD6_rXE"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="">
+          <iframe
+            class="h-[40vh]"
+            src="https://www.youtube.com/embed/t8n5KzitgUc"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="">
+          <iframe
+            class="h-[40vh]"
+            src="https://www.youtube.com/embed/xcf3pAIOhrI"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Our Work Section -->
+
+    <!-- Footer Section -->
+
+    <section class="bg-black bg-opacity-80">
+      <div class="flex max-sm:flex-col md:mx-24 mx-3 md:justify-between">
+        <div
+          class="bg-white rounded-2xl max-sm:mx-auto max-sm:w-[60vw] md:my-16 my-5"
+        >
+          <img
+            class="md:h-[30vh] h-[35vh] w-[70vw] md:w-[12vw]"
+            src="/images/70 LOGO png.png"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col md:my-16 my-5">
+          <h1 class="text-xl font-extrabold text-white">Thank You !</h1>
+          <p class="text-white">
+            Thank you for choosing our services and giving us
+            <br class="max-sm:hidden" />
+            the opportunity to work with you We are confident <br />
+            that you will be satisfied with our services as we
+            <br class="max-sm:hidden" />
+            have full confidence in the experience and competence <br />
+            of our team
+          </p>
+        </div>
+        <div class="flex flex-col md:my-16 my-5 text-white">
+          <h1 class="text-white text-xl font-extrabold">Get in Touch</h1>
+          <p>Email: info@70adagency.com</p>
+          <p>WhatsApp : +92 321 8021 445</p>
+          <p>Phone : +92 300 8021 445</p>
+          <p>
+            Address : 1st Floor Irfania Center Shalimar <br />
+            Link Road, Lahore, Pakistan, 54000
+          </p>
+          <div class="flex space-x-5 mt-3">
+            <div
+              class="md:border-2 text-center md:w-[4vw] md:h-[8.4vh] rounded-full"
+            >
+              <a href="https://www.facebook.com/70ADAgencyOfficial">
+                <i class="fa-brands fa-facebook text-3xl mt-1"></i>
+              </a>
+            </div>
+            <div
+              class="md:border-2 text-center md:w-[4vw] md:h-[8.4vh] rounded-full"
+            >
+              <a href="https://www.instagram.com/70adagencyofficial/">
+                <i class="fa-brands fa-square-instagram text-3xl mt-1"></i>
+              </a>
+            </div>
+            <div
+              class="md:border-2 text-center md:w-[4vw] md:h-[8.4vh] rounded-full"
+            >
+              <a href="https://www.youtube.com/@70adagency/">
+                <i class="fa-brands fa-youtube text-3xl mt-1"></i>
+              </a>
+            </div>
+            <div
+              class="md:border-2 text-center md:w-[4vw] md:h-[8.4vh] rounded-full"
+            >
+              <a href="https://www.tiktok.com/@70adagency">
+                <i class="fa-brands fa-tiktok text-3xl mt-1"></i>
+              </a>
+            </div>
+            <div
+              class="md:border-2 text-center md:w-[4vw] md:h-[8.4vh] rounded-full"
+            >
+              <a href="70adagency@gmail.com">
+                <i class="fa-solid fa-envelope text-3xl mt-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        navLinks.classList.toggle("top-[9%]");
+      }
+    </script>
+  </body>
+</html>
